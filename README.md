@@ -1,36 +1,21 @@
--  Horoscopo diario y e en un futuro en notificacion diaria
+La app Horoscope permite acceder a tu horóscopo diario, semanal y mensual, así como consultar la información personal sobre tu personalidad. También se puede almacenar la información de amigos, con los que podrás comparar la compatibilidad entre vustros signos zodiacales. Esta app es muy personalizable y cuenta con servicios api y de webscrapping que obtienen la información actualizada.
+
+![image](https://github.com/user-attachments/assets/23506250-43bd-4179-ab39-56197b108960)
+
+![{F69F5525-185F-4B28-9226-30D5756093D7}](https://github.com/user-attachments/assets/84c5c8fd-7820-4141-b342-8386c53c8859)
+![{6496C0A0-9A54-4ADA-B058-C01DA79AEB46}](https://github.com/user-attachments/assets/c41ed515-587a-4538-a063-1e060bb67a7a)
+![{559E10C8-47C9-4846-A818-DFF90A660B21}](https://github.com/user-attachments/assets/d50669c0-53d9-4e6a-8b31-0ae9b91d1aaf)
+![image](https://github.com/user-attachments/assets/5e829947-0d71-467f-9e48-50f89ddc65fa)
+![{23827133-7C1F-43AF-A7DA-F4DFD779C235}](https://github.com/user-attachments/assets/54d62624-b222-4c28-9768-c2eba9ecb81a)
+![{B6CFACE9-F859-485C-85C7-CB615B417955}](https://github.com/user-attachments/assets/75c6fb95-4ca5-4c13-a168-db78f3c605d8)
+![{D33151C0-FDA5-4BEF-A4FB-62F97D0EC5EB}](https://github.com/user-attachments/assets/5d9c3c6e-7e1d-41b6-bf79-ef4e9e0edb5b)
+
+
+
+Caraterísticas
+-  Horoscopo diario
 -  Informacion sobre tu personalidad
 -  Ranking semanal
--  Compatibilidad con otro
+-  Compatibilidad con amigos/conocidos
 -  Guardar Perfil
 -  Guardar preferencias del usuario
-
-Webs interesantes
-https://astrologyapi.com/horoscope-api-docs/api-ref/75/sun_sign_prediction/daily/:zodiacName
-https://freeastrologyapi.com/
-https://www.esperanzagraciaoficial.es/horoscopo-semanal/
-https://iconos8.es/icons/set/hor%C3%B3scopo
-
-Fragments y puntos más detallados:
-- Hacer configuración incial de la app (No sé como hacerlo)
-
-- Activity Main: Pantalla principal con el menú inferior con diferentes secciones (ajustes, perfil, amigos, cartas astrales, principal, compatibilidad)
-
-- Fragment principal: Mostrará la información referente al signo del usuario principal. En diferentes tabs (swap) se podrán ver la información del día, semana o mes. (extra) Un botón superior izquierda mostrará un pop up con el black horoscopo del día. (extra) Un botón superior derecha con una campanita permitirá activar y desactivar las notificaciones diarias desde la pantalla principal.
-
-- Perfil: Maquetar el fragment para que quede claro y bonito visualmente. (de arriba a abajo) [Foto perfil (con opción editar perfil) - Nombre, Edad - Lugar de nacimiento - (Icono) Signo - Descripición por defecto de las personas de tu signo - Signo ascendente - Descripción - Signo Lunar - Descripción - Características positivas y negativas]. Se pueden añadir botones de '?' ayuda que expliquen que signifique cada signo.
-
-- Edición del perfil: Como al iniciar la aplicación por primera vez, en esta pestaña (que será diferente a la de ajustes), se deberá tener acceso a toda la información de tu perfil para poder modificarla. [Nombre, Fecha de Nacimiento, Hora de Nacimiento, Lugar de Nacimiento (Con botones por si no sabes la hora), Foto]
-
-- Ajustes de la app: Fragment con ajustes relacionados con el funcionamiento de la app. Idioma, Modo Nocturno, Notificaciones.
-
-- Amigos: Pantalla en la que aparecerá una lista con tarjetas de perfiles que hayas creado previamente (así utilizamos el almacenamiento local). Los perfiles se deben poder eliminar o editar (pensar si poner un botón en cada tarjeta, si mantener seleccionada para que aparezcan opciones). ADEMÁS, en este fragment aparecerá un botón abajo donde podrás consultar el signo para una fecha/hora/lugar dados (hacer pantalla que recoja estos datos) -> cuando le des a 'siguiente' y te muestre la info relativa a ese signo, en la pantalla con esa info aparecerá un botón de añadir como amigo, en el que un pop up te pedirá introducir un nombre, y en caso de hacerlo ya te aparecerá la tarjeta de un amigo con esa información en el primer fragment de este punto. Al clicar en la tarjeta de un perfil te saldrá su información
-
-- Otros Signos: Para poder comprobar información relativa a otros signos habrá una pantalla en la que haya una lista con los 12 signos. Al seleccionar uno, aparecerá una pantalla muy sencilla con info principal del signo. Por ejemplo, el tab con la info de diario y semanal del horóscopo, info general del signo.
-
-- compatibilidades ¿??¿
-
-- Al rotar el movil que todo se vea correctamente.
-- Que al hacer scroll hacia abajo se oculte la barra inferior
-- Modo oscuro
-- Ranking semanal (buscar como encontrarlo, opción extraerlo de la web de esperanzagracia)
