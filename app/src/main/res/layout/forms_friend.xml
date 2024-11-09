@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="30dp"
+    android:background="@drawable/rounded_style"
+    >
+
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cardForm"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="16dp"
+        app:cardCornerRadius="70dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/layoutBt"
+        >
+
+        <ImageView
+            android:id="@+id/imageViewFriend"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/capricorn"
+
+            />
+
+    </com.google.android.material.card.MaterialCardView>
+
+
+
+
+    <LinearLayout
+        android:id="@+id/layoutBt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/cardForm"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        >
+
+        <ImageButton
+            android:id="@+id/uploadBt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/upload_icon"
+            android:background="@android:color/transparent"
+            android:layout_marginRight="15dp"
+            />
+
+        <ImageButton
+            android:id="@+id/cameraBt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/camera_icon"
+            android:background="@android:color/transparent"
+            />
+
+
+    </LinearLayout>
+
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/editTextName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Nombre"
+        android:layout_marginTop="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/layoutBt" />
+
+    <!-- Agrega un ImageView para mostrar la imagen seleccionada -->
+
+
+    <!-- Botón para cargar la imagen desde la galería -->
+
+
+
+
+
+    <LinearLayout
+        android:id="@+id/editDateBirth"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextName"
+        app:layout_constraintBottom_toTopOf="@id/editTimeBirth"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/birthDateInput"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:hint="@string/birth_date"
+            android:layout_weight="1"
+            android:enabled="false"
+            />
+
+        <ImageButton
+            android:id="@+id/datePicker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/date_icon"
+            android:background="@android:color/transparent"
+            android:layout_gravity="center"
+            />
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/editTimeBirth"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editDateBirth"
+        app:layout_constraintBottom_toTopOf="@id/editTextPlaceBirth"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/birthTimeInput"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:hint="@string/time_of_birth"
+            android:layout_weight="1"
+            android:enabled="false"
+            />
+
+        <ImageButton
+            android:id="@+id/timePicker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/time_icon"
+            android:background="@android:color/transparent"
+            android:layout_gravity="center"
+            />
+
+
+    </LinearLayout>
+
+
+
+
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/editTextPlaceBirth"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:hint="Lugar de nacimiento"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/buttons"
+        app:layout_constraintTop_toBottomOf="@id/editTimeBirth"
+        />
+
+
+
+    <LinearLayout
+        android:id="@+id/buttons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/editTextPlaceBirth"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        >
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            >
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/buttonCancel"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:text="@string/cancel"
+                app:cornerRadius="10dp"
+                android:textSize="17dp"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                />
+
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            >
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/buttonAddFriend"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:text="@string/add"
+                app:cornerRadius="10dp"
+                android:textSize="17dp"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                />
+
+
+        </FrameLayout>
+
+
+
+
+
+
+    </LinearLayout>
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

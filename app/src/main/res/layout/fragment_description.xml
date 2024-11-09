@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        app:cardCornerRadius="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:strokeWidth="0dp"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="15dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:gravity="center"
+                android:layout_weight="0.1"
+                >
+
+                <ImageView
+                    android:id="@+id/sign_icon"
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/rank_aquarius" />
+
+                <TextView
+                    android:id="@+id/sign"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ACUARIO"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:layout_marginStart="20dp"
+                    />
+
+
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/date_range"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="21 de marzo - 19 de abril"
+                android:textSize="12sp"
+                android:textStyle="italic"
+                android:layout_gravity="center"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_weight="1"
+                >
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    >
+                <TextView
+                    android:id="@+id/sign_descr"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="0dp"
+                    android:text="Los nacidos bajo el signo de Aries son enérgicos, valientes y optimistas. Son líderes naturales y les gusta asumir desafíos"
+                    android:textSize="18sp"
+                    android:textStyle="italic"
+                    android:gravity="center"
+                    />
+                </ScrollView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.1"
+                android:orientation="vertical"
+                android:layout_marginTop="5dp"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/compatible_with"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:layout_gravity="center_horizontal"
+                    />
+
+                <LinearLayout
+                    android:layout_height="60dp"
+                    android:layout_width="match_parent"
+                    android:padding="5dp"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    >
+
+                    <LinearLayout
+                        android:layout_height="match_parent"
+                        android:layout_width="match_parent"
+                        android:orientation="horizontal"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        >
+
+                        <ImageView
+                            android:id="@+id/sign_comp_icon_1"
+                            android:layout_width="30dp"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/rank_cancer"
+                            />
+
+                        <TextView
+                            android:id="@+id/sign_comp_1"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginEnd="5dp"
+                            android:layout_marginStart="20dp"
+                            android:text="CANCER"
+                            android:textSize="15sp"
+                            android:textStyle="bold"
+                            android:gravity="start|center"
+                            />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_height="match_parent"
+                        android:layout_width="match_parent"
+                        android:orientation="horizontal"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        >
+
+                        <ImageView
+                            android:id="@+id/sign_comp_icon_2"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:src="@drawable/rank_capricorn"
+                            />
+
+                        <TextView
+                            android:id="@+id/sign_comp_2"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginStart="20dp"
+                            android:text="CAPRICORNIO"
+                            android:textSize="15sp"
+                            android:textStyle="bold"
+                            android:gravity="start|center"
+                            />
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp">
+
+                <TextView
+                    android:id="@+id/pos_aspects_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/virtues"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/pos_aspects"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/pos_aspects_label"
+                    android:layout_marginTop="5dp"
+                    android:text=""
+                    android:textColor="#6E6C6C"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/neg_aspects_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/pos_aspects"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/defects"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/neg_aspects"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/neg_aspects_label"
+                    android:layout_marginTop="5dp"
+                    android:text=""
+                    android:textColor="#6E6C6C"
+                    android:textSize="15sp" />
+            </RelativeLayout>
+
+
+
+        </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

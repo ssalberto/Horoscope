@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.preference.PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <EditTextPreference
+        app:key="your_name"
+        app:title="@string/your_name"
+        app:useSimpleSummaryProvider="true"
+        android:hint="@string/your_name_hint">
+
+    </EditTextPreference>
+
+    <ListPreference
+        app:defaultValue="en"
+        app:entries="@array/languages"
+        app:entryValues="@array/lan"
+        app:key="language_pref"
+        app:title="@string/language"
+        app:useSimpleSummaryProvider="true">
+    </ListPreference>
+
+    <SwitchPreference
+        app:defaultValue="false"
+        app:key="dark_mode_pref"
+        app:title="@string/dark_mode"
+        />
+
+    <PreferenceCategory
+        app:title="@string/notifications">
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:title="@string/yourDailyHoroscope"
+            app:key="notification_horoscope_pref"
+            />
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:title="@string/friendBirthdays"
+            app:key="notification_birthdays_pref"
+            />
+    </PreferenceCategory>
+
+
+
+</androidx.preference.PreferenceScreen>

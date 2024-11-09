@@ -1,0 +1,547 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/weeklyFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Título -->
+
+            <TextView
+                android:id="@+id/textViewPeriod"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/loading"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:padding="16dp"
+                app:layout_constraintBottom_toTopOf="@id/textViewParagraph"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:gravity="center"
+                />
+
+            <!-- Párrafo largo -->
+            <TextView
+                android:id="@+id/textViewParagraph"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/loading"
+                android:textSize="15sp"
+                android:paddingStart="50dp"
+                android:paddingEnd="50dp"
+                android:paddingTop="16dp"
+                android:paddingBottom="20dp"
+                android:textStyle="italic"
+                android:gravity="center"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/textViewTitle"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                />
+
+            <TextView
+                android:id="@+id/textViewTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/weekly_ranking"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:padding="16dp"
+                android:gravity="center"
+                />
+            <!-- Aquí puedes añadir más atributos según sea necesario, como ancho, alto, márgenes, etc. -->
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                app:strokeWidth="0dp"
+                >
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+
+                    <!-- Encabezado de la tabla -->
+                    <TableRow
+                        >
+                        <TextView
+                            android:id="@+id/rankFecha"
+                            android:layout_width="0dp"
+                            android:layout_height="40dp"
+                            android:layout_weight="1"
+                            android:text="@string/loading"
+                            android:textColor="@android:color/white"
+                            android:textStyle="bold"
+                            android:gravity="center"
+                            android:background="@color/md_theme_light_onTertiaryContainer"
+                            />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:background="@color/md_theme_light_onTertiary"
+                        >
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.2"
+                            android:text="1."
+                            android:textStyle="italic"
+                            android:gravity="center"
+                            android:textSize="15dp"
+                            android:textColor="@android:color/black"
+
+                            />
+
+                        <ImageView
+                            android:id="@+id/icon1"
+                            android:layout_width="0dp"
+                            android:layout_height="40dp"
+                            android:layout_weight="0.2"
+                            android:padding="7dp"
+                            />
+
+                        <TextView
+                            android:id="@+id/sign1"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:layout_weight="1"
+                            android:text="@string/loading"
+                            android:textStyle="italic"
+                            android:paddingStart="20dp"
+                            android:textSize="20dp"
+                            android:textColor="@android:color/black"
+                            />
+                    </TableRow>
+
+                    <TableRow
+                        android:background="@color/md_theme_dark_onErrorContainer"
+                        >
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.2"
+                            android:text="2."
+                            android:textStyle="italic"
+                            android:textColor="@android:color/black"
+                            android:textSize="15dp"
+                            android:gravity="center"
+                            />
+
+                        <ImageView
+                            android:id="@+id/icon2"
+                            android:layout_width="0dp"
+                            android:layout_height="40dp"
+                            android:layout_weight="0.2"
+                            android:padding="7dp"
+                            />
+
+                        <TextView
+                            android:id="@+id/sign2"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:layout_weight="1"
+                            android:text="@string/loading"
+                            android:textStyle="italic"
+                            android:paddingStart="20dp"
+                            android:textSize="20dp"
+                            android:textColor="@android:color/black"
+                            />
+                    </TableRow>
+
+                    <TableRow
+                        android:background="@color/md_theme_light_onTertiary"
+                        >
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.2"
+                            android:text="3."
+                            android:textStyle="italic"
+                            android:textColor="@android:color/black"
+                            android:gravity="center"
+                            android:textSize="15dp"
+                            />
+
+                        <ImageView
+                            android:id="@+id/icon3"
+                            android:layout_width="0dp"
+                            android:layout_height="40dp"
+                            android:layout_weight="0.2"
+                            android:padding="7dp"
+                            />
+
+                        <TextView
+                            android:id="@+id/sign3"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:layout_weight="1"
+                            android:text="@string/loading"
+                            android:textStyle="italic"
+                            android:paddingStart="20dp"
+                            android:textSize="20dp"
+                            android:textColor="@android:color/black"
+                            />
+                    </TableRow>
+
+                    <TableRow
+                        android:background="@color/md_theme_dark_onErrorContainer"
+                        >
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.2"
+                            android:text="4."
+                            android:textStyle="italic"
+                            android:textColor="@android:color/black"
+                            android:gravity="center"
+                            android:textSize="15dp"
+                            />
+
+                        <ImageView
+                            android:id="@+id/icon4"
+                            android:layout_width="0dp"
+                            android:layout_height="40dp"
+                            android:layout_weight="0.2"
+                            android:padding="7dp"
+                            />
+
+                        <TextView
+                            android:id="@+id/sign4"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:layout_weight="1"
+                            android:text="@string/loading"
+                            android:textStyle="italic"
+                            android:paddingStart="20dp"
+                            android:textSize="20dp"
+                            android:textColor="@android:color/black"
+                            />
+                    </TableRow>
+
+                    <TableRow
+                        android:background="@color/md_theme_light_onTertiary"
+                        >
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.2"
+                            android:text="5."
+                            android:textStyle="italic"
+                            android:textColor="@android:color/black"
+                            android:gravity="center"
+                            android:textSize="15dp"
+                            />
+
+                        <ImageView
+                            android:id="@+id/icon5"
+                            android:layout_width="0dp"
+                            android:layout_height="40dp"
+                            android:layout_weight="0.2"
+                            android:padding="7dp"
+                            />
+
+                        <TextView
+                            android:id="@+id/sign5"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:layout_weight="1"
+                            android:text="@string/loading"
+                            android:textStyle="italic"
+                            android:paddingStart="20dp"
+                            android:textSize="20dp"
+                            android:textColor="@android:color/black"
+                            />
+                    </TableRow>
+
+                    <TableRow
+                        android:background="@color/md_theme_dark_onErrorContainer"
+                        >
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.2"
+                            android:text="6."
+                            android:textStyle="italic"
+                            android:textColor="@android:color/black"
+                            android:gravity="center"
+                            android:textSize="15dp"
+                            />
+
+                        <ImageView
+                            android:id="@+id/icon6"
+                            android:layout_width="0dp"
+                            android:layout_height="40dp"
+                            android:layout_weight="0.2"
+                            android:padding="7dp"
+                            />
+
+                        <TextView
+                            android:id="@+id/sign6"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:layout_weight="1"
+                            android:text="@string/loading"
+                            android:textStyle="italic"
+                            android:paddingStart="20dp"
+                            android:textSize="20dp"
+                            android:textColor="@android:color/black"
+                            />
+                    </TableRow>
+
+                    <TableRow
+                        android:background="@color/md_theme_light_onTertiary"
+                        >
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.2"
+                            android:text="7."
+                            android:textStyle="italic"
+                            android:textColor="@android:color/black"
+                            android:gravity="center"
+                            android:textSize="15dp"
+                            />
+
+                        <ImageView
+                            android:id="@+id/icon7"
+                            android:layout_width="0dp"
+                            android:layout_height="40dp"
+                            android:layout_weight="0.2"
+                            android:padding="7dp"
+                            />
+
+                        <TextView
+                            android:id="@+id/sign7"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:layout_weight="1"
+                            android:text="@string/loading"
+                            android:textStyle="italic"
+                            android:paddingStart="20dp"
+                            android:textSize="20dp"
+                            android:textColor="@android:color/black"
+                            />
+                    </TableRow>
+
+                    <TableRow
+                        android:background="@color/md_theme_dark_onErrorContainer"
+                        >
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.2"
+                            android:text="8."
+                            android:textStyle="italic"
+                            android:textColor="@android:color/black"
+                            android:gravity="center"
+                            android:textSize="15dp"
+                            />
+
+                        <ImageView
+                            android:id="@+id/icon8"
+                            android:layout_width="0dp"
+                            android:layout_height="40dp"
+                            android:layout_weight="0.2"
+                            android:padding="7dp"
+                            />
+
+                        <TextView
+                            android:id="@+id/sign8"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:layout_weight="1"
+                            android:text="@string/loading"
+                            android:textStyle="italic"
+                            android:paddingStart="20dp"
+                            android:textSize="20dp"
+                            android:textColor="@android:color/black"
+                            />
+                    </TableRow>
+
+                    <TableRow
+                        android:background="@color/md_theme_light_onTertiary"
+                        >
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.2"
+                            android:text="9."
+                            android:textStyle="italic"
+                            android:textColor="@android:color/black"
+                            android:gravity="center"
+                            android:textSize="15dp"
+                            />
+
+                        <ImageView
+                            android:id="@+id/icon9"
+                            android:layout_width="0dp"
+                            android:layout_height="40dp"
+                            android:layout_weight="0.2"
+                            android:padding="7dp"
+                            />
+
+                        <TextView
+                            android:id="@+id/sign9"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:layout_weight="1"
+                            android:text="@string/loading"
+                            android:textStyle="italic"
+                            android:paddingStart="20dp"
+                            android:textSize="20dp"
+                            android:textColor="@android:color/black"
+                            />
+                    </TableRow>
+
+                    <TableRow
+                        android:background="@color/md_theme_dark_onErrorContainer"
+                        >
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.2"
+                            android:text="10."
+                            android:textStyle="italic"
+                            android:textColor="@android:color/black"
+                            android:gravity="center"
+                            android:textSize="15dp"
+                            />
+
+                        <ImageView
+                            android:id="@+id/icon10"
+                            android:layout_width="0dp"
+                            android:layout_height="40dp"
+                            android:layout_weight="0.2"
+                            android:padding="7dp"
+                            />
+
+                        <TextView
+                            android:id="@+id/sign10"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:layout_weight="1"
+                            android:text="@string/loading"
+                            android:textStyle="italic"
+                            android:paddingStart="20dp"
+                            android:textSize="20dp"
+                            android:textColor="@android:color/black"
+                            />
+                    </TableRow>
+
+                    <TableRow
+                        android:background="@color/md_theme_light_onTertiary"
+                        >
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.2"
+                            android:text="11."
+                            android:textStyle="italic"
+                            android:textColor="@android:color/black"
+                            android:gravity="center"
+                            android:textSize="15dp"
+                            />
+
+                        <ImageView
+                            android:id="@+id/icon11"
+                            android:layout_width="0dp"
+                            android:layout_height="40dp"
+                            android:layout_weight="0.2"
+                            android:padding="7dp"
+                            />
+
+                        <TextView
+                            android:id="@+id/sign11"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:layout_weight="1"
+                            android:text="@string/loading"
+                            android:textStyle="italic"
+                            android:paddingStart="20dp"
+                            android:textSize="20dp"
+                            android:textColor="@android:color/black"
+                            />
+                    </TableRow>
+
+                    <TableRow
+                        android:background="@color/md_theme_dark_onErrorContainer"
+                        >
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.2"
+                            android:text="12."
+                            android:textStyle="italic"
+                            android:textColor="@android:color/black"
+                            android:gravity="center"
+                            android:textSize="15dp"
+                            />
+
+                        <ImageView
+                            android:id="@+id/icon12"
+                            android:layout_width="0dp"
+                            android:layout_height="40dp"
+                            android:layout_weight="0.2"
+                            android:padding="7dp"
+                            />
+
+                        <TextView
+                            android:id="@+id/sign12"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:layout_weight="1"
+                            android:text="@string/loading"
+                            android:textStyle="italic"
+                            android:paddingStart="20dp"
+                            android:textSize="20dp"
+                            android:textColor="@android:color/black"
+                            />
+                    </TableRow>
+
+
+                    <!-- Repite este bloque para cada fila del ranking -->
+
+                </TableLayout>
+
+
+            </com.google.android.material.card.MaterialCardView>
+
+
+
+
+
+
+            <!-- Puedes añadir más apartados según sea necesario -->
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

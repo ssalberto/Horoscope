@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="zodiac_connection">Zodiac Connection</string>
+    <string name="calculate">calculate</string>
+    <string name="profile">Profile</string>
+</resources>
