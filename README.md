@@ -1,5 +1,7 @@
 La app Horoscope permite acceder a tu horóscopo diario, semanal y mensual, así como consultar la información personal sobre tu personalidad. También se puede almacenar la información de amigos, con los que podrás comparar la compatibilidad entre vustros signos zodiacales. Esta app es muy personalizable y cuenta con servicios api y de webscrapping que obtienen la información actualizada.
 
+Esta aplicación se ha realizdo en Kotlin y accede a la información de los horóscopos mediante apis y wewbscrapping.
+
 ![image](https://github.com/user-attachments/assets/23506250-43bd-4179-ab39-56197b108960)
 
 ![{F69F5525-185F-4B28-9226-30D5756093D7}](https://github.com/user-attachments/assets/84c5c8fd-7820-4141-b342-8386c53c8859)
